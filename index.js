@@ -1,12 +1,9 @@
 const express = require('express')
 const app = express()
-const port = 3000
-
-app.use(express.json())
+const port = process.env.PORT || 3000
 
 app.get("/get", function(req,res) {
 res.send('This is the test 1')
 } )
 
-app.listen(port, function(){})
-console.log(`app running in port ${port}`)
+app.listen(port, () => console.log(`app running in port ${port}`))
