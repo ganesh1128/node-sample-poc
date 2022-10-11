@@ -8,6 +8,5 @@ app.get("/get", function(req,res) {
 res.send('This is the test')
 } )
 
-app.listen(port, function(){
-    console.log("app running in port 3000")
-})
+app.listen(port, function(){})
+console.log(`app running in port ${port}`)
