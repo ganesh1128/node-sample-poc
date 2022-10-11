@@ -5,7 +5,7 @@ const port = 3000
 app.use(express.json())
 
 app.get("/get", function(req,res) {
-res.send('This is the test')
+res.send('This is the test 1')
 } )
 
 app.listen(port, function(){})
