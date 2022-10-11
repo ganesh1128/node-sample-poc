@@ -8,6 +8,6 @@ app.get("/get", function(req,res) {
 res.send('This is the test')
 } )
 
-server.listen(port, function(){
+app.listen(port, function(){
     console.log("app running in port 3000")
 })
